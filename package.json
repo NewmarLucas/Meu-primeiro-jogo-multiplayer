@@ -1,0 +1,25 @@
+{
+  "name": "meu-primeiro-jogo-multiplayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewmarLucas/Meu-primeiro-jogo-multiplayer.git"
+  },
+  "author": "Newmar Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewmarLucas/Meu-primeiro-jogo-multiplayer/issues"
+  },
+  "homepage": "https://github.com/NewmarLucas/Meu-primeiro-jogo-multiplayer#readme"
+}
