@@ -15,7 +15,7 @@
             height: 400px;
         }
     </style>
-    <script src="socket.io/sockets.io.js"></script>
+    <script src="socket.io/socket.io.js"></script>
 </head>
 
 <body>
@@ -30,10 +30,10 @@
         const keyboardListener = createKeyboardListener(document)
         keyboardListener.subscribe(game.movePlayer)
 
+        const socket = io()
+
         const screen = document.getElementById('screen')
         renderScreen(screen, game, requestAnimationFrame)
-
-        const socket = io()
 
         socket.on('connect', () =>{
             const playerId = socket.id
